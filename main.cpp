@@ -44,3 +44,20 @@ void nota() {//Menampilkan Nota
     for (int i = 0; i < 25; i++) {cout<<"------";}cout<<endl;
     cout<<"Total belanja kamu adalah = "<<total <<endl;
 }
+
+void showProduct() {//Menampilkan Produk
+    for (int i = 0; i < 4; i++) {
+        cout << setw (32);
+        cout << jenis[i] ;
+    }cout<<endl;
+    for (int i = 0; i < 25; i++) {cout<<"------";}cout<<endl;
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout
+            << setw (25)
+            <<jajanan[i][j]<<" "
+            <<"("<< indexjajanan[i][j]<<")" << " "
+            <<hjajanan[i][j]<<"k";
+        }cout<<endl;
+    }cout<<endl;
+}
